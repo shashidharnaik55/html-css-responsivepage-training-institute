@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+/*---------------Header-------------------------*/
+
+.site-title {
+  margin: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.site-title span {
+  font-size: 0.78rem;
+  margin: 0;
+}
+.email,
+.contact-num,
+.apply {
+  margin: 1rem 0;
+  width: 25%;
+}
+.logo {
+  width: 25%;
+}
+.apply button {
+  height: 35px;
+  width: 100px;
+  border: none;
+  background: #b7832f;
+  color: #fff;
+}
+/*---------------Nav Bar-------------------------*/
+nav {
+  background: #010142;
+  height: 70px;
+  padding: 1rem;
+  margin: 0 5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+}
+nav li {
+  margin-left: 2em;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+@media screen and (max-width: 767px) {
+  .site-title {
+    flex-direction: column;
+  }
+  .logo,
+  .email,
+  .contact-num,
+  .apply {
+    width: 100%;
+  }
+  nav {
+    margin: 0;
+    background-color: #010142;
+    width: 100%;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5rem 0;
+  }
+}
+/*---------------Home-------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+.slideshow-container img {
+  vertical-align: middle;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  height: 200px;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ff8c00;
+}
+
+.slide-bottom img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+.slider-content {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.slider-content h2 {
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.slider-content p {
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*---------------About-------------------------*/
+.columns {
+  font-size: 0.9rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  width: 55%;
+  text-align: center;
+  padding: 2rem;
+}
+.fa-user-tie,
+.fa-book-reader,
+.fa-book {
+  font-size: 50px;
+}
+
+.col-1,
+.col-3 {
+  background: #010142;
+}
+.col-2 {
+  background: #b7832f;
+}
+
+@media screen and (max-width: 767px) {
+  .columns {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
+}
+
+/*---------------Our Courses-------------------------*/
+.courses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-top: 6rem;
+  text-align: center;
+}
+.sub-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #707070;
+}
+.course-1,
+.course-2,
+.course-3 {
+  width: 32%;
+  padding: 2.5rem 0;
+}
+.courses img {
+  width: 100%;
+  height: 70%;
+}
+.course-description {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #707070;
+}
+.btn {
+  border: none;
+  border-radius: 20px;
+  background: #b7832f;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .courses {
+    flex-direction: column;
+  }
+  .course-1,
+  .course-2,
+  .course-3 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/*---------------Footer-------------------------*/
+
+footer {
+  background: #150a03;
+  margin-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+  color: #fff;
+  height: 100%;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.address,
+.social-media,
+.links,
+.navigation {
+  width: 25%;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  line-height: 1.8rem;
+}
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope {
+  margin-right: 1rem;
+}
+
+.links ul {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #707070;
+}
+.fa-arrow-right {
+  margin-right: 0.75rem;
+}
+
+.social-media ul {
+  margin-left: 3rem;
+  padding: 0;
+  display: flex;
+}
+.social-media li {
+  list-style: none;
+}
+
+.social-media a {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#map {
+  height: 20rem;
+  width: 95%;
+}
+footer .copyright {
+  margin-bottom: 0;
+  text-align: center;
+  color: #717171;
+  font-size: 0.85rem;
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+  }
+  .address,
+  .social-media,
+  .links,
+  .navigation {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+  .address {
+    padding-left: 5rem;
+    text-align: left;
+  }
+  .links li,
+  .social-media ul {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .address {
+    padding-left: 3rem;
+    text-align: left;
+  }
+  .links li,
+  .social-media ul {
+    margin-left: 25%;
+  }
+}
